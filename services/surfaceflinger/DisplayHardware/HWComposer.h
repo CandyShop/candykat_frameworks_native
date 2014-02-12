@@ -122,6 +122,9 @@ public:
     // the release fence is only valid after commit()
     sp<Fence> getAndResetReleaseFence(int32_t id);
 
+    // is VDS solution enabled
+    inline bool isVDSEnabled() const { return mVDSEnabled; };
+
     // needed forward declarations
     class LayerListIterator;
 
@@ -350,6 +353,11 @@ private:
     sp<VSyncThread>                 mVSyncThread;
     bool                            mDebugForceFakeVSync;
     BitSet32                        mAllocatedDisplayIDs;
+<<<<<<< HEAD
+=======
+    bool                            mSwapRectOn;
+    bool                            mVDSEnabled;
+>>>>>>> 84a696e... sf: Determine if virtual display can use HWC for composition
 
     // protected by mLock
     mutable Mutex mLock;
