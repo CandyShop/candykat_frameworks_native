@@ -356,14 +356,8 @@ private:
     sp<VSyncThread>                 mVSyncThread;
     bool                            mDebugForceFakeVSync;
     BitSet32                        mAllocatedDisplayIDs;
-<<<<<<< HEAD
-=======
     bool                            mSwapRectOn;
     bool                            mVDSEnabled;
-<<<<<<< HEAD
->>>>>>> 84a696e... sf: Determine if virtual display can use HWC for composition
-=======
->>>>>>> 84a696e... sf: Determine if virtual display can use HWC for composition
 
     // protected by mLock
     mutable Mutex mLock;
