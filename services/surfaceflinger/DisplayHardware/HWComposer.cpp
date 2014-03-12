@@ -193,7 +193,6 @@ HWComposer::HWComposer(
       mEventHandler(handler),
       mDebugForceFakeVSync(false),
       mSwapRectOn(false),
-      mVDSEnabled(false)
 {
     for (size_t i =0 ; i<MAX_HWC_DISPLAYS ; i++) {
         mLists[i] = 0;

@@ -356,10 +356,7 @@ private:
     bool                            mDebugForceFakeVSync;
     BitSet32                        mAllocatedDisplayIDs;
     bool                            mSwapRectOn;
-<<<<<<< HEAD
     bool                            mVDSEnabled;
-=======
->>>>>>> 5e9e33a... surfaceflinger: Conditional compilation for swaprect feature
 
     // protected by mLock
     mutable Mutex mLock;
